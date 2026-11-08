@@ -29,6 +29,9 @@
             "other": "{{count}} elementy zostały usunięte."
           }
         }
+      },
+      "order_summary": {
+        "cost_table_title": "Podsumowanie kosztów"
       }
     }
   },

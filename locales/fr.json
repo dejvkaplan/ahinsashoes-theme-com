@@ -88,13 +88,22 @@
     },
     "seo_title_product_sale": " [PROMOTION]",
     "seo_title_product_exchange": " - échange gratuit",
-    "seo_title_blog": "Le blog pour marcher avec des chaussures saines"
+    "seo_title_blog": "Le blog pour marcher avec des chaussures saines",
+    "newsletter_popup": {
+      "email_placeholder": "Votre adresse e-mail",
+      "submit": "S’inscrire",
+      "subscribing": "Inscription en cours…",
+      "confirmation": "Merci pour votre inscription !"
+    }
   },
   "products": {
     "badge": {
       "pre_order": "Précommande",
       "save_amount_2_html": "ÉCONOMISEZ {{ saved_amount }}%",
-      "save_amount_fixed_2_html": "ÉCONOMISEZ {{ saved_amount }}"
+      "save_amount_fixed_2_html": "ÉCONOMISEZ {{ saved_amount }}",
+      "new": "Nouveau",
+      "sold_out": "Épuisé",
+      "on_sale": "Promotions"
     },
     "product": {
       "include_taxes": "Taxes incluses.",
@@ -126,12 +135,33 @@
       "na": "Non disponible",
       "product_category": "Catégories :",
       "product_tag": "Étiquettes :",
-      "available_date": "Disponible en "
+      "available_date": "Disponible en ",
+      "login_to_wishlist": "Connectez-vous pour utiliser votre liste d’envies.",
+      "add_to_wishlist": "Ajouter à la liste d’envies",
+      "remove_wishlist": "Retirer de la liste d’envies",
+      "browse_wishlist": "Voir la liste d’envies",
+      "compare": "Comparer",
+      "added_text_compare": "Comparer les produits"
     },
     "product_single": {
       "click_zoom": "Cliquer pour agrandir",
       "will_not_ship_until_html": "Expédition au plus tôt le <span data-incoming-date>{{ date }}</span>",
-      "will_be_in_stock_after_html": "En stock après le <span data-incoming-date>{{ date }}</span>"
+      "will_be_in_stock_after_html": "En stock après le <span data-incoming-date>{{ date }}</span>",
+      "countdown_text": {
+        "day": "Jour",
+        "day_plural": "Jours",
+        "hr": "heure",
+        "hr_plural": "heures",
+        "min": "min",
+        "min_plural": "min",
+        "sec": "s",
+        "sec_plural": "s"
+      },
+      "order_dayNames": "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi",
+      "order_monthNames": "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre",
+      "view_in_space": "Voir dans votre espace",
+      "view_in_space_label": "Voir dans votre espace : ouvre l’article dans une fenêtre de réalité augmentée.",
+      "view_360": "Vue du produit à 360°"
     },
     "grouped": {
       "tt_price": "Sous-total :"
@@ -175,7 +205,24 @@
         "lbl_sale": "Soldes",
         "lbl_preorder": "Précommande",
         "lbl_comming_soon": "Bientôt disponible",
-        "lbl_limited": "Édition limitée"
+        "lbl_limited": "Édition limitée",
+        "lbl_custom_1": "Modifiable 1",
+        "lbl_custom_2": "Modifiable 2"
+      },
+      "quick_shop_text": {
+        "replace_item_atc": "Remplacer l’article",
+        "replace_item_pre": "Remplacer l’article"
+      },
+      "offer_end_in": "L’offre se termine dans :",
+      "countdown_text": {
+        "day": "Jour",
+        "day_plural": "Jours",
+        "hr": "heure",
+        "hr_plural": "heures",
+        "min": "min",
+        "min_plural": "min",
+        "sec": "s",
+        "sec_plural": "s"
       }
     },
     "fbt": {
@@ -185,7 +232,12 @@
       "this_item": "Cet article :"
     },
     "notify_stock": {
-      "trigger": "Me prévenir dès que disponible"
+      "trigger": "Me prévenir dès que disponible",
+      "title": "Inscrivez-vous pour être prévenu dès que cet article sera de nouveau en stock.",
+      "email": "Adresse e-mail",
+      "please": "Prévenez-moi lorsque ce produit sera disponible.",
+      "success": "Merci ! Nous vous préviendrons dès que ce produit sera disponible.",
+      "button": "Me prévenir par e-mail"
     }
   },
   "cart": {
@@ -208,7 +260,8 @@
       "taxes_included_discounts_and_shipping_policy_html": "Taxes comprises. Les <a href=\"{{ link }}\" target=\"_blank\">frais de livraison</a> et les codes de réduction sont calculés lors du paiement.",
       "terms_and_conditions_html": "J’accepte les <a href=\"{{ link }}\" target=\"_blank\">conditions générales de vente</a>.",
       "terms_and_conditions": "J’accepte les conditions générales de vente.",
-      "agree_checkout": "Vous devez accepter les conditions générales de vente pour passer commande."
+      "agree_checkout": "Vous devez accepter les conditions générales de vente pour passer commande.",
+      "recurring_mess": "Livraison récurrente tous les {{ frequency }} {{ frequency_unit }}. Modifiable ou résiliable à tout moment."
     },
     "tool": {
       "save": "Enregistrer",
@@ -221,7 +274,9 @@
       "info_coupon": "Le code promo sera appliqué lors du paiement",
       "placeholder_coupon": "Code promo",
       "split_order": "Diviser la commande en plusieurs livraisons",
-      "discount_code_label": "Ajoutez le code de réduction à l’étape suivante"
+      "discount_code_label": "Ajoutez le code de réduction à l’étape suivante",
+      "gift_wrap_html": "<span class=\"cd\">Vous souhaitez un emballage cadeau ?</span> Pour seulement {{ money }}",
+      "add_gift_wrap": "Ajouter un emballage cadeau"
     },
     "mini_cart": {
       "title": "Panier",
@@ -315,19 +370,65 @@
       "unapproved": "L’adresse e-mail fournie n’est pas autorisée à publier des commentaires.",
       "error_heading": "Veuillez corriger les éléments suivants :",
       "with_count_2": {
-        "other": "{{ count }} commentaires"
+        "other": "{{ count }} commentaires",
+        "zero": "Laisser un commentaire",
+        "one": "1 commentaire"
       },
       "comments_title_html": {
         "zero": "0 avis sur « <span>{{ title }}</span> »",
         "one": "1 avis sur « <span>{{ title }}</span> »",
         "other": "{{ count }} avis sur « <span>{{ title }}</span> »"
+      },
+      "with_count": {
+        "zero": "0 commentaire",
+        "one": "1 commentaire",
+        "other": "{{ count }} commentaires"
+      },
+      "with_count_html": {
+        "zero": "0 <span>commentaire</span>",
+        "one": "1 <span>commentaire</span>",
+        "other": "{{ count }} <span>commentaires</span>"
       }
+    },
+    "portfolio": {
+      "filter_all": "Tout",
+      "category": "Catégorie :",
+      "author": "Auteur :",
+      "tags": "Étiquettes :"
     }
   },
   "sections": {
     "announcement": {
       "close": "Fermer",
       "label": "Annonce"
+    },
+    "lookbook": {
+      "title": {
+        "product": "Produit",
+        "text": "Texte"
+      }
+    },
+    "countdown_text": {
+      "day": "Jour",
+      "day_plural": "Jours",
+      "hr": "heure",
+      "hr_plural": "heures",
+      "min": "min",
+      "min_plural": "min",
+      "sec": "s",
+      "sec_plural": "s"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Votre adresse e-mail",
+      "submit": "S’inscrire",
+      "subscribing": "Inscription en cours…",
+      "confirmation": "Merci pour votre inscription !",
+      "error_exist": "Cette adresse e-mail est déjà utilisée pour un autre compte."
+    },
+    "agree_mail": {
+      "conditions": "Pour vous inscrire, veuillez accepter les conditions générales.",
+      "link_conditions_html": "J’accepte les <a href=\"{{ link }}\" class=\"t4s-text__link\">conditions générales</a>.",
+      "link_conditions_emty": "J’accepte les conditions générales."
     }
   },
   "search": {
@@ -377,7 +478,22 @@
     "follow_yt": "Suivre sur YouTube",
     "share_fb": "Partager sur Facebook",
     "share_em": "Partager par e-mail",
-    "share_pr": "Partager sur Pinterest"
+    "share_pr": "Partager sur Pinterest",
+    "share_tw": "Partager sur Twitter",
+    "share_tu": "Partager sur Tumblr",
+    "share_tl": "Partager sur Telegram",
+    "share_wa": "Partager sur WhatsApp",
+    "follow_tw": "Suivre sur Twitter",
+    "follow_dr": "Suivre sur Dribbble",
+    "follow_ld": "Suivre sur Linkedin",
+    "follow_tu": "Suivre sur Tumblr",
+    "follow_vm": "Suivre sur Vimeo",
+    "follow_bh": "Suivre sur Behance",
+    "follow_sc": "Suivre sur Soundcloud",
+    "follow_tt": "Suivre sur Tiktok",
+    "follow_sp": "Suivre sur Snapchat",
+    "follow_sptify": "Suivre sur Spotify",
+    "follow_threads": "Suivre sur Threads"
   },
   "templates": {
     "contact": {
@@ -444,12 +560,17 @@
       "country": "Pays :",
       "zip": "Code postal :",
       "phone": "Téléphone :",
-      "title": "MON COMPTE"
+      "title": "MON COMPTE",
+      "manage_subs": "Gérer les abonnements",
+      "company": "Entreprise :"
     },
     "activate_account": {
       "subtext": "Créez votre mot de passe pour activer votre compte.",
       "password_confirm": "Confirmer le mot de passe",
-      "title": "Activer le compte"
+      "title": "Activer le compte",
+      "password": "Mot de passe",
+      "submit": "Activer le compte",
+      "cancel": "Refuser l’invitation"
     },
     "addresses": {
       "title": "Adresses",
@@ -481,7 +602,8 @@
       "date": "Date",
       "payment_status": "Statut du paiement",
       "fulfillment_status": "Statut de traitement",
-      "total": "Total"
+      "total": "Total",
+      "none": "Vous n’avez pas encore passé de commande."
     },
     "order": {
       "title": "Commande {{ name }}",
@@ -501,7 +623,9 @@
       "total": "Total",
       "fulfilled_at_html": "Traitée le {{ date }}",
       "subtotal": "Sous-total",
-      "track_shipment": "Suivre l’expédition"
+      "track_shipment": "Suivre l’expédition",
+      "gift_note": "Message cadeau",
+      "note": "Instructions particulières pour le vendeur"
     },
     "reset_password": {
       "password": "Mot de passe",
@@ -553,6 +677,48 @@
   },
   "list_collections": {
     "meta_title": "Liste des collections",
-    "meta_description": "La page qui répertorie toutes les collections de la boutique."
+    "meta_description": "La page qui répertorie toutes les collections de la boutique.",
+    "pagination": {
+      "load_more": "Afficher plus",
+      "load_prev": "Afficher les précédentes",
+      "bar_with_count_html": "Vous avez consulté <span data-current-bar>{{ current_count }}</span> collections sur {{ total_count }}."
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "local_pickup": {
+        "stock_details": {
+          "in_stock": "En stock"
+        }
+      },
+      "split_delivery": {
+        "delivery_updated_toast": {
+          "shipping_only": "Votre livraison a été mise à jour. {{shipping}}",
+          "removal_only": "Votre livraison a été mise à jour. {{removal}}",
+          "shipping_and_removal": "Votre livraison a été mise à jour. {{shipping}} {{removal}}",
+          "shipping": {
+            "one": "{{count}} article sera désormais expédié.",
+            "other": "{{count}} articles seront désormais expédiés."
+          },
+          "removal": {
+            "one": "{{count}} article a été supprimé.",
+            "other": "{{count}} articles ont été supprimés."
+          }
+        }
+      }
+    }
+  },
+  "password_page": {
+    "opening_soon": "Ouverture prochaine",
+    "drawer_heading": "Saisir le mot de passe",
+    "login_form_password_label": "Mot de passe",
+    "login_form_password_placeholder": "Votre mot de passe",
+    "login_form_submit": "Entrer",
+    "signup_form_success": "Nous vous enverrons un e-mail juste avant l’ouverture !",
+    "admin_link_html": "Vous êtes propriétaire de la boutique ? <a href=\"/admin\" class=\"text-link\">Connectez-vous ici</a>",
+    "password_link": "Accéder avec le mot de passe"
+  },
+  "wishlist_page": {
+    "meta": "Ma liste d’envies"
   }
 }

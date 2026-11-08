@@ -88,13 +88,22 @@
     },
     "seo_title_product_sale": " [SALE]",
     "seo_title_product_exchange": " - kostenloser Umtausch",
-    "seo_title_blog": "Blog: In gesunden Schuhen gehen"
+    "seo_title_blog": "Blog: In gesunden Schuhen gehen",
+    "newsletter_popup": {
+      "email_placeholder": "Deine E-Mail-Adresse",
+      "submit": "Anmelden",
+      "subscribing": "Anmeldung läuft …",
+      "confirmation": "Danke für deine Anmeldung!"
+    }
   },
   "products": {
     "badge": {
       "pre_order": "Vorbestellung",
       "save_amount_2_html": "SPARE {{ saved_amount }}%",
-      "save_amount_fixed_2_html": "SPARE {{ saved_amount }}"
+      "save_amount_fixed_2_html": "SPARE {{ saved_amount }}",
+      "new": "Neu",
+      "sold_out": "Ausverkauft",
+      "on_sale": "Sale"
     },
     "product": {
       "include_taxes": "Inklusive Steuern.",
@@ -126,12 +135,33 @@
       "na": "Nicht verfügbar",
       "product_category": "Kategorien:",
       "product_tag": "Tags:",
-      "available_date": "Verfügbar im "
+      "available_date": "Verfügbar im ",
+      "login_to_wishlist": "Melde dich an, um deine Wunschliste zu nutzen.",
+      "add_to_wishlist": "Zur Wunschliste hinzufügen",
+      "remove_wishlist": "Von der Wunschliste entfernen",
+      "browse_wishlist": "Wunschliste ansehen",
+      "compare": "Vergleichen",
+      "added_text_compare": "Produkte vergleichen"
     },
     "product_single": {
       "click_zoom": "Zum Vergrößern klicken",
       "will_not_ship_until_html": "Versand frühestens am <span data-incoming-date>{{ date }}</span>",
-      "will_be_in_stock_after_html": "Nach dem <span data-incoming-date>{{ date }}</span> auf Lager"
+      "will_be_in_stock_after_html": "Nach dem <span data-incoming-date>{{ date }}</span> auf Lager",
+      "countdown_text": {
+        "day": "Tag",
+        "day_plural": "Tage",
+        "hr": "Stunde",
+        "hr_plural": "Stunden",
+        "min": "Min.",
+        "min_plural": "Min.",
+        "sec": "Sek.",
+        "sec_plural": "Sek."
+      },
+      "order_dayNames": "Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag",
+      "order_monthNames": "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember",
+      "view_in_space": "In deiner Umgebung ansehen",
+      "view_in_space_label": "In deiner Umgebung ansehen; öffnet den Artikel in einem Augmented-Reality-Fenster.",
+      "view_360": "360°-Produktansicht"
     },
     "grouped": {
       "tt_price": "Zwischensumme:"
@@ -175,7 +205,24 @@
         "lbl_sale": "Sale",
         "lbl_preorder": "Vorbestellung",
         "lbl_comming_soon": "Demnächst erhältlich",
-        "lbl_limited": "Limitierte Edition"
+        "lbl_limited": "Limitierte Edition",
+        "lbl_custom_1": "Bearbeitbar 1",
+        "lbl_custom_2": "Bearbeitbar 2"
+      },
+      "quick_shop_text": {
+        "replace_item_atc": "Artikel ersetzen",
+        "replace_item_pre": "Artikel ersetzen"
+      },
+      "offer_end_in": "Angebot endet in:",
+      "countdown_text": {
+        "day": "Tag",
+        "day_plural": "Tage",
+        "hr": "Stunde",
+        "hr_plural": "Stunden",
+        "min": "Min.",
+        "min_plural": "Min.",
+        "sec": "Sek.",
+        "sec_plural": "Sek."
       }
     },
     "fbt": {
@@ -185,7 +232,12 @@
       "this_item": "Dieser Artikel:"
     },
     "notify_stock": {
-      "trigger": "Benachrichtige mich, sobald verfügbar"
+      "trigger": "Benachrichtige mich, sobald verfügbar",
+      "title": "Lass dich benachrichtigen, sobald dieser Artikel wieder verfügbar ist.",
+      "email": "E-Mail-Adresse",
+      "please": "Bitte benachrichtigt mich, sobald dieses Produkt verfügbar ist.",
+      "success": "Danke! Wir geben dir Bescheid, sobald dieses Produkt verfügbar ist.",
+      "button": "Per E-Mail benachrichtigen"
     }
   },
   "cart": {
@@ -208,7 +260,8 @@
       "taxes_included_discounts_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\" target=\"_blank\">Versandkosten</a> und Rabattcodes werden an der Kasse berechnet.",
       "terms_and_conditions_html": "Ich stimme den <a href=\"{{ link }}\" target=\"_blank\">Allgemeinen Geschäftsbedingungen</a> zu.",
       "terms_and_conditions": "Ich stimme den Allgemeinen Geschäftsbedingungen zu.",
-      "agree_checkout": "Du musst den Allgemeinen Geschäftsbedingungen zustimmen, um zur Kasse zu gehen."
+      "agree_checkout": "Du musst den Allgemeinen Geschäftsbedingungen zustimmen, um zur Kasse zu gehen.",
+      "recurring_mess": "Regelmäßige Lieferung alle {{ frequency }} {{ frequency_unit }}. Jederzeit ändern oder kündigen."
     },
     "tool": {
       "save": "Speichern",
@@ -221,7 +274,9 @@
       "info_coupon": "Der Gutscheincode wird an der Kasse angewendet",
       "placeholder_coupon": "Gutscheincode",
       "split_order": "Bestellung auf mehrere Lieferungen aufteilen",
-      "discount_code_label": "Rabattcode im nächsten Schritt hinzufügen"
+      "discount_code_label": "Rabattcode im nächsten Schritt hinzufügen",
+      "gift_wrap_html": "<span class=\"cd\">Möchtest du eine Geschenkverpackung?</span> Für nur {{ money }}",
+      "add_gift_wrap": "Geschenkverpackung hinzufügen"
     },
     "mini_cart": {
       "title": "Warenkorb",
@@ -315,19 +370,65 @@
       "unapproved": "Die angegebene E-Mail-Adresse ist nicht zum Veröffentlichen von Kommentaren freigegeben.",
       "error_heading": "Bitte korrigiere Folgendes:",
       "with_count_2": {
-        "other": "{{ count }} Kommentare"
+        "other": "{{ count }} Kommentare",
+        "zero": "Schreib einen Kommentar",
+        "one": "1 Kommentar"
       },
       "comments_title_html": {
         "zero": "0 Gedanken zu „<span>{{ title }}</span>“",
         "one": "1 Gedanke zu „<span>{{ title }}</span>“",
         "other": "{{ count }} Gedanken zu „<span>{{ title }}</span>“"
+      },
+      "with_count": {
+        "zero": "0 Kommentare",
+        "one": "1 Kommentar",
+        "other": "{{ count }} Kommentare"
+      },
+      "with_count_html": {
+        "zero": "0 <span>Kommentare</span>",
+        "one": "1 <span>Kommentar</span>",
+        "other": "{{ count }} <span>Kommentare</span>"
       }
+    },
+    "portfolio": {
+      "filter_all": "Alle",
+      "category": "Kategorie:",
+      "author": "Autor:",
+      "tags": "Tags:"
     }
   },
   "sections": {
     "announcement": {
       "close": "Schließen",
       "label": "Ankündigung"
+    },
+    "lookbook": {
+      "title": {
+        "product": "Produkt",
+        "text": "Text"
+      }
+    },
+    "countdown_text": {
+      "day": "Tag",
+      "day_plural": "Tage",
+      "hr": "Stunde",
+      "hr_plural": "Stunden",
+      "min": "Min.",
+      "min_plural": "Min.",
+      "sec": "Sek.",
+      "sec_plural": "Sek."
+    },
+    "newsletter_form": {
+      "email_placeholder": "Deine E-Mail-Adresse",
+      "submit": "Anmelden",
+      "subscribing": "Anmeldung läuft …",
+      "confirmation": "Danke für deine Anmeldung!",
+      "error_exist": "Diese E-Mail-Adresse wird bereits für ein anderes Konto verwendet."
+    },
+    "agree_mail": {
+      "conditions": "Bitte stimme den Allgemeinen Geschäftsbedingungen zu, um dich anzumelden.",
+      "link_conditions_html": "Ich stimme den <a href=\"{{ link }}\" class=\"t4s-text__link\">Allgemeinen Geschäftsbedingungen</a> zu.",
+      "link_conditions_emty": "Ich stimme den Allgemeinen Geschäftsbedingungen zu."
     }
   },
   "search": {
@@ -377,7 +478,22 @@
     "follow_yt": "Auf YouTube folgen",
     "share_fb": "Auf Facebook teilen",
     "share_em": "Per E-Mail teilen",
-    "share_pr": "Auf Pinterest teilen"
+    "share_pr": "Auf Pinterest teilen",
+    "share_tw": "Auf Twitter teilen",
+    "share_tu": "Auf Tumblr teilen",
+    "share_tl": "Auf Telegram teilen",
+    "share_wa": "Auf WhatsApp teilen",
+    "follow_tw": "Auf Twitter folgen",
+    "follow_dr": "Auf Dribbble folgen",
+    "follow_ld": "Auf Linkedin folgen",
+    "follow_tu": "Auf Tumblr folgen",
+    "follow_vm": "Auf Vimeo folgen",
+    "follow_bh": "Auf Behance folgen",
+    "follow_sc": "Auf Soundcloud folgen",
+    "follow_tt": "Auf Tiktok folgen",
+    "follow_sp": "Auf Snapchat folgen",
+    "follow_sptify": "Auf Spotify folgen",
+    "follow_threads": "Auf Threads folgen"
   },
   "templates": {
     "contact": {
@@ -444,12 +560,17 @@
       "country": "Land:",
       "zip": "Postleitzahl:",
       "phone": "Telefon:",
-      "title": "MEIN KONTO"
+      "title": "MEIN KONTO",
+      "manage_subs": "Abonnements verwalten",
+      "company": "Unternehmen:"
     },
     "activate_account": {
       "subtext": "Erstelle dein Passwort, um dein Konto zu aktivieren.",
       "password_confirm": "Passwort bestätigen",
-      "title": "Konto aktivieren"
+      "title": "Konto aktivieren",
+      "password": "Passwort",
+      "submit": "Konto aktivieren",
+      "cancel": "Einladung ablehnen"
     },
     "addresses": {
       "title": "Adressen",
@@ -481,7 +602,8 @@
       "date": "Datum",
       "payment_status": "Zahlungsstatus",
       "fulfillment_status": "Bearbeitungsstatus",
-      "total": "Gesamt"
+      "total": "Gesamt",
+      "none": "Du hast noch keine Bestellungen aufgegeben."
     },
     "order": {
       "title": "Bestellung {{ name }}",
@@ -501,7 +623,9 @@
       "total": "Gesamt",
       "fulfilled_at_html": "Ausgeführt am {{ date }}",
       "subtotal": "Zwischensumme",
-      "track_shipment": "Sendung verfolgen"
+      "track_shipment": "Sendung verfolgen",
+      "gift_note": "Geschenknachricht",
+      "note": "Besondere Hinweise für uns"
     },
     "reset_password": {
       "password": "Passwort",
@@ -532,7 +656,8 @@
       "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
       "qr_image_alt": "QR-Code — zum Einlösen des Geschenkgutscheins scannen",
       "copy_code": "Code kopieren",
-      "copy_code_success": "Code erfolgreich kopiert"
+      "copy_code_success": "Code erfolgreich kopiert",
+      "disabled": "Deaktiviert"
     }
   },
   "recipient": {
@@ -553,6 +678,89 @@
   },
   "list_collections": {
     "meta_title": "Kollektionsübersicht",
-    "meta_description": "Die Kollektionsübersicht mit allen Kollektionen des Shops."
+    "meta_description": "Die Kollektionsübersicht mit allen Kollektionen des Shops.",
+    "pagination": {
+      "load_more": "Mehr laden",
+      "load_prev": "Vorherige laden",
+      "bar_with_count_html": "Du hast <span data-current-bar>{{ current_count }}</span> von {{ total_count }} Kollektionen angesehen."
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "local_pickup": {
+        "stock_details": {
+          "in_stock": "Auf Lager"
+        }
+      },
+      "split_delivery": {
+        "delivery_updated_toast": {
+          "shipping_only": "Deine Lieferung wurde aktualisiert. {{shipping}}",
+          "removal_only": "Deine Lieferung wurde aktualisiert. {{removal}}",
+          "shipping_and_removal": "Deine Lieferung wurde aktualisiert. {{shipping}} {{removal}}",
+          "shipping": {
+            "one": "{{count}} Artikel wird jetzt versendet.",
+            "other": "{{count}} Artikel werden jetzt versendet."
+          },
+          "removal": {
+            "one": "{{count}} Artikel wurde entfernt.",
+            "other": "{{count}} Artikel wurden entfernt."
+          }
+        }
+      }
+    }
+  },
+  "password_page": {
+    "opening_soon": "Wir öffnen bald",
+    "drawer_heading": "Passwort eingeben",
+    "login_form_password_label": "Passwort",
+    "login_form_password_placeholder": "Dein Passwort",
+    "login_form_submit": "Öffnen",
+    "signup_form_success": "Wir schicken dir kurz vor der Eröffnung eine E-Mail!",
+    "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"text-link\">Hier anmelden</a>",
+    "password_link": "Mit Passwort öffnen"
+  },
+  "wishlist_page": {
+    "meta": "Meine Wunschliste",
+    "title": "Wunschliste",
+    "empty": "Deine Wunschliste ist leer.",
+    "empty_html": "Du hast noch keine Produkte auf deiner Wunschliste.<br /> Entdecke unsere Auswahl im Shop."
+  },
+  "compare_page": {
+    "meta": "Mein Produktvergleich",
+    "title": "Vergleichen",
+    "empty": "DEINE VERGLEICHSLISTE IST LEER.",
+    "empty_html": "Du hast noch keine Produkte zum Vergleich hinzugefügt. Wähle Produkte aus, um sie zu vergleichen.<br /> Entdecke unsere Auswahl im Shop.",
+    "remove": "Entfernen",
+    "in_stock": "Auf Lager",
+    "outofstock": "Nicht auf Lager"
+  },
+  "compare_popup": {
+    "title": "Produkte vergleichen",
+    "close": "Schließen",
+    "remove": "Diesen Artikel entfernen",
+    "clear": "Alles entfernen",
+    "button": "Vergleichen",
+    "count": {
+      "zero": "Produkte",
+      "one": "Produkt",
+      "other": "Produkte"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Informationen zum Geschäft ansehen",
+      "check_other_stores": "Verfügbarkeit in anderen Geschäften prüfen",
+      "pick_up_available": "Abholung möglich",
+      "pick_up_currently_unavailable": "Abholung derzeit nicht möglich",
+      "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}</strong> möglich",
+      "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}</strong> derzeit nicht möglich",
+      "check_map": "Auf Google Maps ansehen"
+    }
+  },
+  "onboarding": {
+    "product_title": "Name deines Produkts",
+    "collection_title": "Name deiner Kollektion",
+    "blog_title": "Titel deines Beitrags",
+    "blog_author": "Name des Autors"
   }
 }

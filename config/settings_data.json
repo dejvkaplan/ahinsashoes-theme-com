@@ -129,7 +129,7 @@
     "notify_currency": false,
     "hover_currency": false,
     "custom_css_t4s": true,
-    "global_css": "#BIS_trigger {\nmargin-top: 10px; \n}",
+    "global_css": "#BIS_trigger {\nmargin-top: 10px; \n}\nform:has(#AddToCart:not([disabled])) .BIS_trigger,\nform:has(#AddToCart:not([disabled])) #BIS_trigger {\n  display: none !important;\n}",
     "t4s_custom_js": true,
     "share_twitter": false,
     "share_tumblr": false,

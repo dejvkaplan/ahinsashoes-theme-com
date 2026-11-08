@@ -88,13 +88,22 @@
     },
     "seo_title_product_sale": " [REBAJAS]",
     "seo_title_product_exchange": " - cambio gratuito",
-    "seo_title_blog": "Blog sobre caminar con calzado saludable"
+    "seo_title_blog": "Blog sobre caminar con calzado saludable",
+    "newsletter_popup": {
+      "email_placeholder": "Tu correo electrónico",
+      "submit": "Suscribirme",
+      "subscribing": "Suscribiendo…",
+      "confirmation": "¡Gracias por suscribirte!"
+    }
   },
   "products": {
     "badge": {
       "pre_order": "Reserva",
       "save_amount_2_html": "AHORRA {{ saved_amount }}%",
-      "save_amount_fixed_2_html": "AHORRA {{ saved_amount }}"
+      "save_amount_fixed_2_html": "AHORRA {{ saved_amount }}",
+      "new": "Nuevo",
+      "sold_out": "Agotado",
+      "on_sale": "Rebajas"
     },
     "product": {
       "include_taxes": "Impuestos incluidos.",
@@ -126,12 +135,28 @@
       "na": "No disponible",
       "product_category": "Categorías:",
       "product_tag": "Etiquetas:",
-      "available_date": "Disponible en "
+      "available_date": "Disponible en ",
+      "login_to_wishlist": "Inicia sesión para usar tu lista de deseos.",
+      "add_to_wishlist": "Añadir a la lista de deseos",
+      "remove_wishlist": "Quitar de la lista de deseos",
+      "browse_wishlist": "Ver la lista de deseos",
+      "compare": "Comparar",
+      "added_text_compare": "Comparar productos"
     },
     "product_single": {
       "click_zoom": "Haz clic para ampliar",
       "will_not_ship_until_html": "No se enviará antes del <span data-incoming-date>{{ date }}</span>",
-      "will_be_in_stock_after_html": "Disponible en stock después del <span data-incoming-date>{{ date }}</span>"
+      "will_be_in_stock_after_html": "Disponible en stock después del <span data-incoming-date>{{ date }}</span>",
+      "countdown_text": {
+        "day": "Día",
+        "day_plural": "Días",
+        "hr": "hora",
+        "hr_plural": "horas",
+        "min": "min",
+        "min_plural": "min",
+        "sec": "s",
+        "sec_plural": "s"
+      }
     },
     "grouped": {
       "tt_price": "Subtotal:"
@@ -175,7 +200,24 @@
         "lbl_sale": "Rebajas",
         "lbl_preorder": "Reserva",
         "lbl_comming_soon": "Próximamente",
-        "lbl_limited": "Edición limitada"
+        "lbl_limited": "Edición limitada",
+        "lbl_custom_1": "Editable 1",
+        "lbl_custom_2": "Editable 2"
+      },
+      "quick_shop_text": {
+        "replace_item_atc": "Sustituir artículo",
+        "replace_item_pre": "Sustituir artículo"
+      },
+      "offer_end_in": "La oferta termina en:",
+      "countdown_text": {
+        "day": "Día",
+        "day_plural": "Días",
+        "hr": "hora",
+        "hr_plural": "horas",
+        "min": "min",
+        "min_plural": "min",
+        "sec": "s",
+        "sec_plural": "s"
       }
     },
     "fbt": {
@@ -315,19 +357,65 @@
       "unapproved": "La dirección de correo electrónico indicada no está autorizada para publicar comentarios.",
       "error_heading": "Corrige lo siguiente:",
       "with_count_2": {
-        "other": "{{ count }} comentarios"
+        "other": "{{ count }} comentarios",
+        "zero": "Deja un comentario",
+        "one": "1 comentario"
       },
       "comments_title_html": {
         "zero": "0 opiniones sobre «<span>{{ title }}</span>»",
         "one": "1 opinión sobre «<span>{{ title }}</span>»",
         "other": "{{ count }} opiniones sobre «<span>{{ title }}</span>»"
+      },
+      "with_count": {
+        "zero": "0 comentarios",
+        "one": "1 comentario",
+        "other": "{{ count }} comentarios"
+      },
+      "with_count_html": {
+        "zero": "0 <span>comentarios</span>",
+        "one": "1 <span>comentario</span>",
+        "other": "{{ count }} <span>comentarios</span>"
       }
+    },
+    "portfolio": {
+      "filter_all": "Todo",
+      "category": "Categoría:",
+      "author": "Autor:",
+      "tags": "Etiquetas:"
     }
   },
   "sections": {
     "announcement": {
       "close": "Cerrar",
       "label": "Anuncio"
+    },
+    "lookbook": {
+      "title": {
+        "product": "Producto",
+        "text": "Texto"
+      }
+    },
+    "countdown_text": {
+      "day": "Día",
+      "day_plural": "Días",
+      "hr": "hora",
+      "hr_plural": "horas",
+      "min": "min",
+      "min_plural": "min",
+      "sec": "s",
+      "sec_plural": "s"
+    },
+    "newsletter_form": {
+      "email_placeholder": "Tu correo electrónico",
+      "submit": "Suscribirme",
+      "subscribing": "Suscribiendo…",
+      "confirmation": "¡Gracias por suscribirte!",
+      "error_exist": "Este correo electrónico ya se utiliza en otra cuenta."
+    },
+    "agree_mail": {
+      "conditions": "Para registrarte, debes aceptar los términos y condiciones.",
+      "link_conditions_html": "Acepto los <a href=\"{{ link }}\" class=\"t4s-text__link\">términos y condiciones</a>.",
+      "link_conditions_emty": "Acepto los términos y condiciones."
     }
   },
   "search": {
@@ -377,7 +465,22 @@
     "follow_yt": "Seguir en YouTube",
     "share_fb": "Compartir en Facebook",
     "share_em": "Compartir por correo electrónico",
-    "share_pr": "Compartir en Pinterest"
+    "share_pr": "Compartir en Pinterest",
+    "share_tw": "Compartir en Twitter",
+    "share_tu": "Compartir en Tumblr",
+    "share_tl": "Compartir en Telegram",
+    "share_wa": "Compartir en WhatsApp",
+    "follow_tw": "Seguir en Twitter",
+    "follow_dr": "Seguir en Dribbble",
+    "follow_ld": "Seguir en Linkedin",
+    "follow_tu": "Seguir en Tumblr",
+    "follow_vm": "Seguir en Vimeo",
+    "follow_bh": "Seguir en Behance",
+    "follow_sc": "Seguir en Soundcloud",
+    "follow_tt": "Seguir en Tiktok",
+    "follow_sp": "Seguir en Snapchat",
+    "follow_sptify": "Seguir en Spotify",
+    "follow_threads": "Seguir en Threads"
   },
   "templates": {
     "contact": {
@@ -553,6 +656,35 @@
   },
   "list_collections": {
     "meta_title": "Lista de colecciones",
-    "meta_description": "La página que muestra todas las colecciones de la tienda."
+    "meta_description": "La página que muestra todas las colecciones de la tienda.",
+    "pagination": {
+      "load_more": "Cargar más",
+      "load_prev": "Cargar anteriores",
+      "bar_with_count_html": "Has visto <span data-current-bar>{{ current_count }}</span> de {{ total_count }} colecciones."
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "local_pickup": {
+        "stock_details": {
+          "in_stock": "En stock"
+        }
+      },
+      "split_delivery": {
+        "delivery_updated_toast": {
+          "shipping_only": "Tu entrega se ha actualizado. {{shipping}}",
+          "removal_only": "Tu entrega se ha actualizado. {{removal}}",
+          "shipping_and_removal": "Tu entrega se ha actualizado. {{shipping}} {{removal}}",
+          "shipping": {
+            "one": "Ahora se enviará {{count}} artículo.",
+            "other": "Ahora se enviarán {{count}} artículos."
+          },
+          "removal": {
+            "one": "Se ha eliminado {{count}} artículo.",
+            "other": "Se han eliminado {{count}} artículos."
+          }
+        }
+      }
+    }
   }
 }

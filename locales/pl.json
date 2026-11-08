@@ -710,7 +710,7 @@
       "add_gift_wrap": "Dodaj pakowanie na prezent",
       "coupon": "Kupon:",
       "add_coupon": "Dodaj kupon",
-      "info_coupon": "Kod kuponu zadziała na stronie kasy",
+      "info_coupon": "Kod rabatowy zostanie uwzględniony przy finalizacji zamówienia",
       "placeholder_coupon": "Kod rabatowy",
       "split_order": "Podziel zamówienie na kilka dostaw",
       "discount_code_label": "Dodaj kod rabatowy w następnym kroku"

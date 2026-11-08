@@ -156,7 +156,12 @@
         "min_plural": "min",
         "sec": "s",
         "sec_plural": "s"
-      }
+      },
+      "order_dayNames": "domingo,lunes,martes,miércoles,jueves,viernes,sábado",
+      "order_monthNames": "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre",
+      "view_in_space": "Ver en tu espacio",
+      "view_in_space_label": "Ver en tu espacio: abre el artículo en una ventana de realidad aumentada.",
+      "view_360": "Vista del producto en 360°"
     },
     "grouped": {
       "tt_price": "Subtotal:"
@@ -227,7 +232,12 @@
       "this_item": "Este artículo:"
     },
     "notify_stock": {
-      "trigger": "Avísame cuando esté disponible"
+      "trigger": "Avísame cuando esté disponible",
+      "title": "Regístrate para recibir un aviso cuando este artículo vuelva a estar disponible.",
+      "email": "Correo electrónico",
+      "please": "Avísame cuando este producto esté disponible.",
+      "success": "¡Gracias! Te avisaremos cuando este producto esté disponible.",
+      "button": "Avisarme por correo electrónico"
     }
   },
   "cart": {
@@ -250,7 +260,8 @@
       "taxes_included_discounts_and_shipping_policy_html": "Impuestos incluidos. Los <a href=\"{{ link }}\" target=\"_blank\">gastos de envío</a> y los códigos de descuento se calculan al finalizar la compra.",
       "terms_and_conditions_html": "Acepto los <a href=\"{{ link }}\" target=\"_blank\">términos y condiciones</a>.",
       "terms_and_conditions": "Acepto los términos y condiciones.",
-      "agree_checkout": "Debes aceptar los términos y condiciones de venta para finalizar la compra."
+      "agree_checkout": "Debes aceptar los términos y condiciones de venta para finalizar la compra.",
+      "recurring_mess": "Entrega periódica cada {{ frequency }} {{ frequency_unit }}. Puedes modificarla o cancelarla en cualquier momento."
     },
     "tool": {
       "save": "Guardar",
@@ -263,7 +274,9 @@
       "info_coupon": "El código de cupón se aplicará al finalizar la compra",
       "placeholder_coupon": "Código de cupón",
       "split_order": "Dividir el pedido en varias entregas",
-      "discount_code_label": "Añade el código de descuento en el siguiente paso"
+      "discount_code_label": "Añade el código de descuento en el siguiente paso",
+      "gift_wrap_html": "<span class=\"cd\">¿Quieres un envoltorio de regalo?</span> Por solo {{ money }}",
+      "add_gift_wrap": "Añadir envoltorio de regalo"
     },
     "mini_cart": {
       "title": "Carrito",
@@ -547,12 +560,17 @@
       "country": "País:",
       "zip": "Código postal:",
       "phone": "Teléfono:",
-      "title": "MI CUENTA"
+      "title": "MI CUENTA",
+      "manage_subs": "Gestionar suscripciones",
+      "company": "Empresa:"
     },
     "activate_account": {
       "subtext": "Crea tu contraseña para activar tu cuenta.",
       "password_confirm": "Confirmar contraseña",
-      "title": "Activar cuenta"
+      "title": "Activar cuenta",
+      "password": "Contraseña",
+      "submit": "Activar cuenta",
+      "cancel": "Rechazar invitación"
     },
     "addresses": {
       "title": "Direcciones",
@@ -584,7 +602,8 @@
       "date": "Fecha",
       "payment_status": "Estado del pago",
       "fulfillment_status": "Estado de preparación",
-      "total": "Total"
+      "total": "Total",
+      "none": "Todavía no has realizado ningún pedido."
     },
     "order": {
       "title": "Pedido {{ name }}",
@@ -604,7 +623,9 @@
       "total": "Total",
       "fulfilled_at_html": "Preparado el {{ date }}",
       "subtotal": "Subtotal",
-      "track_shipment": "Seguir el envío"
+      "track_shipment": "Seguir el envío",
+      "gift_note": "Mensaje de regalo",
+      "note": "Instrucciones especiales para el vendedor"
     },
     "reset_password": {
       "password": "Contraseña",
@@ -635,7 +656,8 @@
       "add_to_apple_wallet": "Añadir a Apple Wallet",
       "qr_image_alt": "Código QR — escanéalo para canjear la tarjeta regalo",
       "copy_code": "Copiar código",
-      "copy_code_success": "Código copiado correctamente"
+      "copy_code_success": "Código copiado correctamente",
+      "disabled": "Desactivada"
     }
   },
   "recipient": {
@@ -686,5 +708,59 @@
         }
       }
     }
+  },
+  "password_page": {
+    "opening_soon": "Próxima apertura",
+    "drawer_heading": "Introduce la contraseña",
+    "login_form_password_label": "Contraseña",
+    "login_form_password_placeholder": "Tu contraseña",
+    "login_form_submit": "Entrar",
+    "signup_form_success": "¡Te enviaremos un correo electrónico justo antes de abrir!",
+    "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"/admin\" class=\"text-link\">Inicia sesión aquí</a>",
+    "password_link": "Entrar con contraseña"
+  },
+  "wishlist_page": {
+    "meta": "Mi lista de deseos",
+    "title": "Lista de deseos",
+    "empty": "Tu lista de deseos está vacía.",
+    "empty_html": "Todavía no tienes productos en tu lista de deseos.<br /> Descubre nuestra selección en la tienda."
+  },
+  "compare_page": {
+    "meta": "Mi comparador de productos",
+    "title": "Comparar",
+    "empty": "TU LISTA DE COMPARACIÓN ESTÁ VACÍA.",
+    "empty_html": "Todavía no has añadido productos para comparar. Selecciona algunos para compararlos.<br /> Descubre nuestra selección en la tienda.",
+    "remove": "Eliminar",
+    "in_stock": "En stock",
+    "outofstock": "Sin stock"
+  },
+  "compare_popup": {
+    "title": "Comparar productos",
+    "close": "Cerrar",
+    "remove": "Eliminar este artículo",
+    "clear": "Borrar todo",
+    "button": "Comparar",
+    "count": {
+      "zero": "productos",
+      "one": "producto",
+      "other": "productos"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Ver la información de la tienda",
+      "check_other_stores": "Consultar disponibilidad en otras tiendas",
+      "pick_up_available": "Recogida disponible",
+      "pick_up_currently_unavailable": "Recogida no disponible actualmente",
+      "pick_up_available_at_html": "Recogida disponible en <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Recogida no disponible actualmente en <strong>{{ location_name }}</strong>",
+      "check_map": "Ver en Google Maps"
+    }
+  },
+  "onboarding": {
+    "product_title": "Nombre de tu producto",
+    "collection_title": "Nombre de tu colección",
+    "blog_title": "Título de tu artículo",
+    "blog_author": "Nombre del autor"
   }
 }

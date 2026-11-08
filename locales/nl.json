@@ -762,5 +762,16 @@
     "collection_title": "Naam van je collectie",
     "blog_title": "Titel van je bericht",
     "blog_author": "Naam van de auteur"
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "promise_line": {
+            "track_with_shop_button_label": "Volgen met Shop"
+          }
+        }
+      }
+    }
   }
 }

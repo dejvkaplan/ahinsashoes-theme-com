@@ -739,8 +739,8 @@
         "other": "{{ count }} <span>kommentarer</span>"
       },
       "comments_title_html": {
-        "zero": "0 thought on “<span>{{ title }}</span>”",
-        "one": "1 thought on “<span>{{ title }}</span>”",
+        "zero": "Inga kommentarer till ”<span>{{ title }}</span>”",
+        "one": "1 kommentar till ”<span>{{ title }}</span>”",
         "other": "{{ count }} tankar om ”<span>{{ title }}</span>”"
       }
     }
@@ -773,6 +773,17 @@
       "load_more": "Ladda fler",
       "load_prev": "Ladda föregående",
       "bar_with_count_html": "Du har visat <span data-current-bar>{{ current_count }}</span> av {{ total_count }} produkter"
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "promise_line": {
+            "track_with_shop_button_label": "Spåra med Shop"
+          }
+        }
+      }
     }
   }
 }

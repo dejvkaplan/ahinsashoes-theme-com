@@ -453,8 +453,8 @@
         "other": "{{ count }} <span>komentarzy</span>"
       },
       "comments_title_html": {
-        "zero": "0 thought on “<span>{{ title }}</span>”",
-        "one": "1 thought on “<span>{{ title }}</span>”",
+        "zero": "Brak komentarzy do „<span>{{ title }}</span>”",
+        "one": "1 komentarz do „<span>{{ title }}</span>”",
         "other": "{{ count }} myśli na temat „<span>{{ title }}</span>”"
       }
     }
@@ -773,6 +773,17 @@
     "404": {
       "subtext": "Przepraszamy! Szukana strona nie została znaleziona.",
       "link_html": "Wróć do <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" rel=\"home\">strony głównej</a>"
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "promise_line": {
+            "track_with_shop_button_label": "Śledź w aplikacji Shop"
+          }
+        }
+      }
     }
   }
 }

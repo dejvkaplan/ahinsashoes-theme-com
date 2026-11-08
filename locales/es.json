@@ -762,5 +762,16 @@
     "collection_title": "Nombre de tu colección",
     "blog_title": "Título de tu artículo",
     "blog_author": "Nombre del autor"
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "promise_line": {
+            "track_with_shop_button_label": "Seguir con Shop"
+          }
+        }
+      }
+    }
   }
 }

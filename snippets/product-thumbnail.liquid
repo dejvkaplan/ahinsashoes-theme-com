@@ -2,7 +2,7 @@
 assign media_type    = media.media_type
 assign image         = media.preview_image
 if image.alt == blank 
-	assign img_alt = 'products.product.alt' | alt
+	assign img_alt = 'products.product.alt' | t
 else 
 	assign img_alt = image.alt 
 endif

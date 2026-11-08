@@ -118,6 +118,8 @@
                                       {% endfor %}
                                       {% if product.handle == 'tara-light-barefoot-sand-women' or product.handle == 'tara-light-barefoot-sand-men' %}
                                         {% assign image = se_p_info.media.value %}
+                                      {% else %}
+                                        {{ image }}
                                       {% endif %}
                                         <img class="lazyloadt4s" data-src="{{ image | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="{% render 'img_svg', w: 800, h: 500 %}" width="800" height="500" alt="image-{{ index }}">    
                                         <span class="lazyloadt4s-loader is-bg-img" style="background: url({{ image | image_url: width: 1 }});"></span>

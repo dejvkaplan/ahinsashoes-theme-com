@@ -15,7 +15,9 @@
   if (!t) return;
   var root = document.getElementById('f-3-b6fcc542fb021c84fdaff536dd0a74a1');
   if (!root) return;
-  var consentPath = {{ routes.root_url | json }}.replace(//?$/, '/') + 'pages/consent-to-receiving-newsletters';
+  var localeRoot = {{ routes.root_url | json }};
+  if (localeRoot.slice(-1) !== '/') localeRoot += '/';
+  var consentPath = localeRoot + 'pages/consent-to-receiving-newsletters';
   function setText(el, value) {
     if (el && el.textContent !== value) el.textContent = value;
   }
